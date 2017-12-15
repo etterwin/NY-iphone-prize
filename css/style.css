@@ -13,8 +13,8 @@ body {
   position: relative;
   display: flex;
   height: 100vh;
-  background: #002447  no-repeat 50% -120px;
-  background-image: url("../assets/pictures/svg/bg.svg"); }
+  background: url("../assets/pictures/svg/transparent.svg") repeat, #002447 url("../assets/pictures/svg/bg.svg") no-repeat 50% -120px;
+  background-size: 100%, 100%; }
 
 @keyframes showBlock {
   0% {
@@ -58,8 +58,8 @@ body {
   padding: 50px 30px;
   border-radius: 4px;
   max-width: 500px;
-  background: url("../assets/pictures/svg/leaf-1.svg") no-repeat -10% 110%, url("../assets/pictures/svg/leaf-2.svg") no-repeat 110% 45%, url("../assets/pictures/svg/leaf-3.svg") no-repeat 110% 70%, #bfab6f url("../assets/pictures/svg/popup-wrapper.svg") repeat;
-  background-size: 150px, 100px, 130px, 250px;
+  background: url("../assets/pictures/svg/leaf-1.svg") no-repeat -10% 110%, url("../assets/pictures/svg/leaf-2.svg") no-repeat 110% 25%, url("../assets/pictures/svg/leaf-4.svg") no-repeat 110% 90%, url("../assets/pictures/svg/leaf-3.svg") no-repeat 110% 70%, url("../assets/pictures/svg/leaf-5.svg") no-repeat 10% -10%, url("../assets/pictures/svg/leaf-6.svg") no-repeat -10% 40%, #bfab6f url("../assets/pictures/svg/popup-wrapper.svg") repeat;
+  background-size: 150px, 100px, 140px, 120px, 120px, 90px, 250px;
   overflow: hidden; }
 
 .popup-caption,
@@ -244,7 +244,8 @@ body {
   height: 225px; }
 
 .card-face {
-  height: 225px; }
+  height: 225px;
+  padding: 10px; }
 
 .card .back {
   -webkit-transform: rotateY(180deg);
@@ -255,5 +256,140 @@ body {
   transform: rotateY(180deg); }
 
 /*end card*/
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+  body {
+    background-size: 100%, 150%;
+    padding: 10px; }
+
+  .wrapper {
+    margin: 20px auto 0; }
+
+  .header-caption {
+    font-size: 40pt; }
+
+  .main-caption {
+    font-size: 30px; }
+
+  .header-text,
+  .main-text {
+    font-size: 26px; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background: url("../assets/pictures/svg/transparent.svg") repeat, #002447 url("../assets/pictures/svg/bg.svg") no-repeat 50% 50%;
+    background-size: 100%, 200%;
+    padding: 10px; }
+
+  .wrapper {
+    margin: 20px auto 0; }
+
+  .header-caption {
+    font-size: 36pt; }
+
+  .main-caption {
+    font-size: 28px; }
+
+  .header-text,
+  .main-text {
+    font-size: 26px; } }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    background: url("../assets/pictures/svg/transparent.svg") repeat, #002447 url("../assets/pictures/svg/bg.svg") no-repeat 50% 50%;
+    background-size: 100%, 300%;
+    padding: 10px; }
+
+  .wrapper {
+    margin: 10px auto 0; }
+
+  .header-caption {
+    font-size: 28pt; }
+
+  .main-caption {
+    font-size: 22px; }
+
+  .header-text,
+  .main-text {
+    font-size: 16px; }
+
+  .overlay--active,
+  .popup-wrapper {
+    position: fixed; }
+
+  .popup__container {
+    width: 95%; } }
+@media screen and (max-width: 479px) {
+  body {
+    background: url("../assets/pictures/svg/transparent.svg") repeat, #002447 url("../assets/pictures/svg/bg.svg") no-repeat 50% 70%;
+    background-size: 100%, 450%;
+    padding: 10px; }
+
+  .wrapper {
+    margin: 0 auto; }
+
+  .header-caption {
+    font-size: 28pt; }
+
+  .main-caption {
+    font-size: 22px; }
+
+  .header-text,
+  .main-text {
+    font-size: 16px; }
+
+  .overlay--active,
+  .popup-wrapper {
+    position: fixed; }
+
+  .popup__container {
+    width: 95%; }
+
+  .container-nonuse {
+    width: 100px;
+    height: 180px; }
+
+  .container {
+    width: 100px;
+    height: 180px; }
+
+  .card {
+    width: 100px;
+    height: 180px; }
+
+  .front,
+  .back {
+    width: 100px;
+    height: 180px; }
+
+  .card-shirt {
+    width: 100px;
+    height: 180px; }
+
+  .card-face {
+    height: 180px;
+    padding: 10px; } }
+@media screen and (max-width: 320px) {
+  .container-nonuse {
+    width: 90px;
+    height: 160px; }
+
+  .container {
+    width: 90px;
+    height: 160px; }
+
+  .card {
+    width: 90px;
+    height: 160px; }
+
+  .front,
+  .back {
+    width: 90px;
+    height: 160px; }
+
+  .card-shirt {
+    width: 90px;
+    height: 160px; }
+
+  .card-face {
+    width: 90px;
+    height: 160px; } }
 
 /*# sourceMappingURL=style.css.map */
