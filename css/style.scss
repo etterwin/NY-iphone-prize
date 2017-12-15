@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 16px;
+  font-family: 'Spectral SC', serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background: #002447 url("../assets/pictures/svg/bg.svg") no-repeat 50% -120px;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*overlay*/
+.overlay {
+  display: none;
+}
+
+.overlay--active {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  animation: showBlock 0.3s ease-in-out 1s forwards;
+}
+/*end overlay*/
+
+
+
+/*popup*/
+.popup {
+  display: none;
+}
+
+.popup-wrapper {
+  position: absolute;
+  z-index: 1002;
+  display: flex;top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  animation: showBlock 0.3s ease-in-out 1s forwards;
+}
+
+.popup__container {
+  background: white;
+  margin: auto;
+  padding: 50px 30px;
+  border-radius: 4px;
+  max-width: 500px;
+}
+
+.popup-caption,
+.popup-text,
+.popup-link {
+  color: #000;
+}
+
+.popup__content {
+  width: 70%;
+}
+
+/*end popup*/
+
+
+
+/*main*/
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 50px auto 0;
+  min-height: 250px;
+}
+
+.header-caption {
+  font-size: 48pt;
+  text-align: center;
+  background: linear-gradient(45deg, #ecc152 25%, #f5f5a5 50%, #ecc152);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px auto;
+  opacity: 0;
+  animation: showBlock 0.3s ease-in-out forwards;
+}
+
+.header-text {
+  opacity: 0;
+  animation: showBlock 0.3s ease-in-out 0.3s forwards;
+}
+
+.header-text,
+.main-text {
+  font-size: 28px;
+  color: #ecc152;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.main-caption {
+  font-size: 32pt;
+  text-align: center;
+  background: linear-gradient(45deg, #ecc152 25%, #f5f5a5 50%, #ecc152);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px auto;
+  opacity: 0;
+  animation: showBlock 0.3s ease-in-out 0.5s forwards;
+}
+
+.main-text {
+  opacity: 0;
+  animation: showBlock 0.3s ease-in-out 0.7s forwards;
+}
+
+/*end main*/
+
+
+
+/*card*/
+.card-wrapper {
+  display: flex;
+  max-width: 500px;
+  margin: 20px auto;
+  opacity: 0;
+  animation: showBlock 0.3s ease-in-out 1s forwards;
+}
+
+.container-nonuse {
+  position: relative;
+  display: inline-block;
+  width: 125px;
+  height: 225px;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  width: 125px;
+  height: 225px;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0 0 15px 5px rgba(245,245,165,0.4);
+    -moz-box-shadow: 0 0 15px 5px rgba(245,245,165,0.4);
+    box-shadow: 0 0 15px 5px rgba(245,245,165,0.4);
+  }
+}
+
+.card {
+  width: 125px;
+  height: 225px;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 125px;
+  height: 225px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #47525d;
+}
+
+.card-shirt {
+  width: 125px;
+  height: 225px;
+}
+
+.card-face {
+  height: 225px;
+}
+
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/*end card*/

@@ -1,0 +1,121 @@
+<!-- Дизайн и сайт разработан специально для Вовы -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="shortcut icon" href="assets/pictures/img/title.png" type="image/png" />
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- script -->
+    <script src="js/flipCard.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="wrapper">
+
+    <header class="header">
+
+        <h1 class="header-caption">New Year's drawing of prizes</h1>
+        <p class="header-text">Shortly before the New Year, large companies hold a contest,
+            everyone can take part in!</p>
+
+    </header>
+
+    <main class="main">
+
+        <h2 class="main-caption">The main prize is a car</h2>
+        <p class="main-text">Game terms are very simple. To win you only need to open one of the three cards.</p>
+
+        <div class="card-wrapper">
+
+            <div class="container container-nonuse" id="container_1">
+
+                <div class="card" id="card_1">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container container-nonuse" id="container_2">
+
+                <div class="card" id="card_2">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container container-nonuse" id="container_3">
+
+                <div class="card" id="card_3">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="popup">
+
+            <div class="popup__container">
+
+                <div class="popup__content">
+
+                    <h2 class="popup-caption">Unfortunately, you didn’t win the main prize, but we have a consolation
+                        prize for you - iPhone X</h2>
+                    <p class="popup-text">To receive the prize, please, follow the instructions</p>
+
+                    <a href="#" class="popup-link">Continue</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- script -->
+<script src="js/flipCard.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+
+</body>
+</html>
