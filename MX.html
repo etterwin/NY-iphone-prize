@@ -1,0 +1,141 @@
+<!-- Дизайн и сайт разработан специально для Вовы -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganar un premio</title>
+    <link rel="shortcut icon" href="assets/pictures/img/snowflake-shape.png" type="image/png" />
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- script -->
+    <script src="js/flipCard.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="overlay"></div>
+
+<div class="wrapper">
+
+    <header class="header">
+
+        <h1 class="header-caption">Año Nuevo de premios</h1>
+        <img src="assets/pictures/svg/pattern-header.svg" class="header-img" />
+        <p class="header-text">Poco después de Año Nuevo, las compañías grandes hacen un concurso, ¡todos pueden
+            participar!</p>
+
+    </header>
+
+    <main class="main">
+
+
+        <div class="caption__container">
+
+            <img src="assets/pictures/svg/tracer.svg" class="caption-img caption-img--left" />
+            <h2 class="main-caption">El primer premio es un carro</h2>
+            <img src="assets/pictures/svg/tracer.svg" class="caption-img caption-img--right" />
+
+        </div>
+
+        <span class="line"></span>
+        <span class="line--small"></span>
+
+        <p class="main-text">Las condiciones del juego son muy sencillas. Para ganar solo debes abrir una de las
+            tres cartas.</p>
+
+        <div class="card-wrapper">
+
+            <div class="container container-nonuse" id="container_1">
+
+                <div class="card" id="card_1">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container container-nonuse" id="container_2">
+
+                <div class="card" id="card_2">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container container-nonuse" id="container_3">
+
+                <div class="card" id="card_3">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <span class="line--small"></span>
+        <span class="line"></span>
+
+        <div class="popup">
+
+            <div class="popup__container">
+
+                <div class="popup__content">
+
+                    <h2 class="popup-caption">Por desgracia no ganaste el primer premio, pero tenemos un premio de
+                        consolación para ti; iPhone X</h2>
+                    <p class="popup-text">Para recibir el premio, por favor sigue las instrucciones</p>
+
+                    <a href="http://adbomb.pro/click.php?lp=1" class="popup-link">
+                        <p class="popup-link-text">Continuar</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- script -->
+<script src="js/flipCard.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+
+</body>
+</html>

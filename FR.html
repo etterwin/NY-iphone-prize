@@ -1,0 +1,141 @@
+<!-- Дизайн и сайт разработан специально для Вовы -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gagner un prix</title>
+    <link rel="shortcut icon" href="assets/pictures/img/snowflake-shape.png" type="image/png" />
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- script -->
+    <script src="js/flipCard.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="overlay"></div>
+
+<div class="wrapper">
+
+    <header class="header">
+
+        <h1 class="header-caption">Tirage des prix du nouvel an</h1>
+        <img src="assets/pictures/svg/pattern-header.svg" class="header-img" />
+        <p class="header-text">Peu de temps avant le Nouvel An, les grandes entreprises organisent un concours auquel
+            tout le monde peut participer!</p>
+
+    </header>
+
+    <main class="main">
+
+
+        <div class="caption__container">
+
+            <img src="assets/pictures/svg/tracer.svg" class="caption-img caption-img--left" />
+            <h2 class="main-caption">Le prix principal est une voiture</h2>
+            <img src="assets/pictures/svg/tracer.svg" class="caption-img caption-img--right" />
+
+        </div>
+
+        <span class="line"></span>
+        <span class="line--small"></span>
+
+        <p class="main-text">Les termes du jeu sont très simples. Pour gagner, il suffit d'ouvrir l'une des trois
+            cartes.</p>
+
+        <div class="card-wrapper">
+
+            <div class="container container-nonuse" id="container_1">
+
+                <div class="card" id="card_1">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container container-nonuse" id="container_2">
+
+                <div class="card" id="card_2">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container container-nonuse" id="container_3">
+
+                <div class="card" id="card_3">
+
+                    <div class="front">
+                        <img src="assets/pictures/svg/card-1.svg" class="card-shirt" />
+                    </div>
+
+                    <div class="back">
+                        <img src="assets/pictures/img/iphone.png" class="card-face" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <span class="line--small"></span>
+        <span class="line"></span>
+
+        <div class="popup">
+
+            <div class="popup__container">
+
+                <div class="popup__content">
+
+                    <h2 class="popup-caption">Malheureusement, vous n'avez pas gagné le prix principal, mais nous
+                        avons un prix de consolation pour vous - l'iPhone X</h2>
+                    <p class="popup-text">Pour recevoir le prix, veuillez suivre les instructions</p>
+
+                    <a href="http://adbomb.pro/click.php?lp=1" class="popup-link">
+                        <p class="popup-link-text">Continuer</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- script -->
+<script src="js/flipCard.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+
+</body>
+</html>
